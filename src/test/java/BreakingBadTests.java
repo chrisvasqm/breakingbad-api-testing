@@ -16,6 +16,7 @@ public class BreakingBadTests {
         RestAssured
                 .config()
                 .objectMapperConfig(objectMapperConfig().defaultObjectMapperType(ObjectMapperType.GSON));
+
         characters = new Characters();
     }
 
