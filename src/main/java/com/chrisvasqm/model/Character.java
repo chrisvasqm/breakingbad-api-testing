@@ -1,4 +1,4 @@
-package com.chrisvasqm;
+package com.chrisvasqm.model;
 
 public class Character {
     private  String name;

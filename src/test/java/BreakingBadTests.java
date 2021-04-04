@@ -1,4 +1,4 @@
-import com.chrisvasqm.Character;
+import com.chrisvasqm.model.Character;
 import io.restassured.RestAssured;
 import io.restassured.mapper.ObjectMapperType;
 import org.testng.annotations.AfterMethod;
