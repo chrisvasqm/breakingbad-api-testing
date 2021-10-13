@@ -25,6 +25,9 @@ public class BreakingBadTests {
         if (characters == null)
             throw new IllegalStateException("The characters repository was not initialized properly.");
 
+        if (characters.getAll().size() == 0)
+            throw new IllegalStateException("The characters repository is empty.");
+
         for (final var character : characters.getAll()) {
             System.out.println("The actor: " + character.getPortrayed() + " played the character: " + character.getName());
         }
