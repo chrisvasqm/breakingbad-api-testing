@@ -22,6 +22,9 @@ public class BreakingBadTests {
 
     @Test
     public void testPrintAllCharacterNamesAndActors() {
+        if (characters == null)
+            throw new IllegalStateException("The characters repository was not initialized properly.");
+
         for (final var character : characters.getAll()) {
             System.out.println("The actor: " + character.getPortrayed() + " played the character: " + character.getName());
         }
